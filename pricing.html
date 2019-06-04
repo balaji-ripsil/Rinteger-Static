@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- Meta tag -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="SITE KEYWORDS HERE" />
+		<meta name="description" content="">
+		<meta name='copyright' content='codeglim'>	
+		
+		<!-- Title Tag -->
+        <title>Tromas &minus; Multipurpose Business HTML5 Theme</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png">	
+		
+        <!-- Web Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- Tromas CSS -->
+		<link rel="stylesheet" href="css/theme-plugins.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">	
+		
+		<!-- Tromas Color -->
+		<link rel="stylesheet" href="css/skin/skin1.css">
+		<!--<link rel="stylesheet" href="css/skin/skin2.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin3.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin4.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin5.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin6.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin7.css">-->
+		<!--<link rel="stylesheet" href="css/skin/skin8.css">-->
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            @sR: #418a95;
+@sRLight: #418a95 + #222;
+@sRDark: #418a95 - #222;
+@darkGrey:#6b6b6b;
+@offWhite:#f6f3f7;
+@bg:#f6f3f7 - #111;
+@darkBg:#f6f3f7 - #222;
+
+*{  
+  margin:0;
+  padding:0;
+  font-family:Lato;
+}
+
+body{
+  padding:0px;
+  background:@bg;
+}
+
+.flatTable{  
+  width:100%;
+  min-width:500px;
+  border-collapse:collapse;  
+  font-weight:bold;
+  color:@darkGrey;
+  
+  tr{
+    height:50px;
+    background:@darkBg;
+    border-bottom:rgba(0,0,0,.05) 1px solid;
+  }
+  
+  td{    
+    box-sizing:border-box;
+    padding-left:30px;
+    
+  }
+
+.titleTr{
+  height:70px;  
+  color:#f6f3f7; 
+  background:@sR;  
+  border:0px solid;
+}
+
+.plusTd{
+    background:url(https://i.imgur.com/3hSkhay.png) center center no-repeat, rgba(0,0,0,.1);
+}
+
+.controlTd{  
+  position:relative;
+  width:80px;
+  background:url(https://i.imgur.com/9Q5f6cv.png) center center no-repeat;
+  cursor:pointer;
+}
+
+.headingTr{
+    height:30px;
+    background:@sRLight;
+    color:@offWhite; 
+    font-size:8pt;
+    border:0px solid;
+}  
+}
+
+.button{
+  text-align:center;
+  cursor:pointer;
+}
+
+.sForm{
+  position:absolute;
+  top:0;
+  right:-400px;
+  width:400px;
+  height:100%; 
+  background:@darkBg;  
+  overflow:hidden;  
+  transition:width 1s, right .3s;
+  padding:0px;
+  box-sizing:border-box;
+  
+  .close{
+    float:right; 
+    height:70px;
+    width:80px;
+    padding-top:25px;    
+    box-sizing:border-box;
+    background:rgba(255,0,0,.4);
+      
+  }
+  
+  .title{
+    width:100%;
+    height:70px;
+    padding-top:20px;
+    padding-left:20px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,.1);
+  }
+}
+.open{  
+  right:0;
+  width:400px !important;
+}
+
+.settingsIcons{
+  position:absolute; 
+  top:0;
+  right:0;
+  width:0;
+
+  overflow:hidden;
+
+}
+
+.display{
+
+  width:300px;
+}
+
+.settingsIcon{
+  float:right; 
+  background:@sR;
+  color:@offWhite;
+  height:50px;
+  width:80px;
+  padding-top:15px;
+  box-sizing:border-box;
+  text-align:center;
+  overflow:hidden;
+  transition:width 1s;
+}
+
+.settingsIcon:hover{
+  background:@sRDark;
+}
+
+tr:nth-child(3){
+   .settingsIcon{
+    height:51px;
+  }
+}
+
+.openIcon{
+   width:80px; 
+}
+</style>   
+    </head>
+<body>
+    <table class="flatTable">
+    <tr class="titleTr">
+      <td class="titleTd">TABLE TITLE</td>
+      <td colspan="4"></td>
+      <td class="plusTd button"></td>
+    </tr>
+    <tr class="headingTr">
+      <td>REFERENCE</td>
+      <td>DATE ISSUED</td>
+      <td>COMPANY</td>
+      <td>AMOUNT</td>
+      <td>STATUS</td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <td>#2331212</td>
+      <td>Feb 21,2013</td>
+      <td>White Out</td>
+      <td>$2,000</td>
+      <td>Paid</td>
+      <td class="controlTd">
+        <div class="settingsIcons">
+          <span class="settingsIcon"><img src="https://i.imgur.com/nnzONel.png" alt="X" /></span>
+          <span class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></span>
+          <div class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></div>
+        </div>  
+      </td>
+    </tr>
+    
+    <tr>
+      <td>#2331212</td>
+      <td>Feb 21,2013</td>
+      <td>White Out</td>
+      <td>$2,000</td>
+      <td>Paid</td>
+      <td class="controlTd">
+        <div class="settingsIcons">
+          <span class="settingsIcon"><img src="https://i.imgur.com/nnzONel.png" alt="X" /></span>
+          <span class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></span>
+          <div class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></div>
+        </div> 
+      </td>
+    </tr>
+    
+    <tr>
+      <td>#2331212</td>
+      <td>Feb 21,2013</td>
+      <td>White Out</td>
+      <td>$2,000</td>
+      <td>Paid</td>
+      <td class="controlTd">      
+        <div class="settingsIcons">
+          <span class="settingsIcon"><img src="https://i.imgur.com/nnzONel.png" alt="X" /></span>
+          <span class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></span>
+          <div class="settingsIcon"><img src="https://i.imgur.com/UAdSFIg.png" alt="placeholder icon" /></div>
+        </div>    
+       </td>
+    </tr>
+  
+  </table>
+  
+  <div id="sForm" class="sForm sFormPadding">
+          <span class="button close"><img src="https://i.imgur.com/nnzONel.png" alt="X"  class="" /></span>
+          <h2 class="title">Add a New Record</h2>  
+      </div>
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+  
+  <script>
+      $(".button").click(function () {
+  $("#sForm").toggleClass("open");   
+});
+
+$(".controlTd").click(function () {
+  $(this).children(".settingsIcons").toggleClass("display"); 
+  $(this).children(".settingsIcon").toggleClass("openIcon"); 
+});
+
+  </script> 
+  </body>   
+  </html>
