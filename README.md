@@ -1,0 +1,2 @@
+# Rinteger-Static
+Static-Site
